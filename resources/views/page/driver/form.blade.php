@@ -11,12 +11,12 @@
     <div class="d-flex">
         <div class="page-title">
             <h4 class="font-weight-semibold">
-                <a href="javascript:;" class="sidebar-control sidebar-secondary-toggle mr-2">
-                    <i class="icon-transmission"></i>
-                </a>
-                Dashboard
+                Driver
             </h4>
-            <div class="text-muted">Welcome back, Eugene!</div>
+            <div class="breadcrumb ml-0 mt-1">
+                <a href="javascript:;" class="breadcrumb-item py-0">Driver</a>
+                <a href="javascript:;" class="breadcrumb-item py-0">Form</a>
+            </div>
         </div>
         <a href="#" class="header-elements-toggle text-body d-md-none"><i class="icon-more"></i></a>
     </div>

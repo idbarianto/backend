@@ -149,7 +149,7 @@
         
         // select2 with search in article index
         $('.select-search.custome-width').select2({
-            width: 200,
+            width: 130,
         });
 
         // initialize fixed width. Single select

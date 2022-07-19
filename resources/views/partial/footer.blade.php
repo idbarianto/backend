@@ -9,18 +9,18 @@
 
     <div class="navbar-collapse collapse" id="navbar-footer">
         <span class="navbar-text">
-            &copy; 2015 - 2018. <a href="#"> env-development </a>
+            &copy; Technical Test - Backend Developer
         </span>
 
         <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-                <a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank">
+                <a href="javascript:;" class="navbar-nav-link">
                     <i class="icon-lifebuoy mr-2"></i>
                     Support
                 </a>
             </li>
             <li class="nav-item">
-                <a href="https://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank">
+                <a href="javascript:;" class="navbar-nav-link">
                     <i class="icon-file-text2 mr-2"></i>
                     Docs
                 </a>

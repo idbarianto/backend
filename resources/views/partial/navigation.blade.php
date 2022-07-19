@@ -48,7 +48,7 @@
                                     </a>
 
                                     <a href="#tab-report" class="list-group-item list-group-item-action rounded mr-2 mr-xl-0" data-toggle="tab">
-                                        <i class="icon-users position-static pr-1 mr-2"></i>
+                                        <i class="icon-clipboard6 position-static pr-1 mr-2"></i>
                                         Report
                                         <i class="icon-arrow-right8 position-static list-group-item-active-indicator d-none d-xl-inline-block ml-auto"></i>
                                     </a>
@@ -61,12 +61,6 @@
                                     </a>
 
                                     <div class="font-weight-semibold border-bottom pb-2 mb-2"></div>
-
-                                    <a href="#tab_menu" class="list-group-item list-group-item-action rounded mr-2 mr-xl-0" data-toggle="tab">
-                                        <i class="icon-menu6 position-static pr-1 mr-2"></i>
-                                        Menu
-                                        <i class="icon-arrow-right8 position-static list-group-item-active-indicator d-none d-xl-inline-block ml-auto"></i>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +70,7 @@
                             <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade"id="tab-dashboard">
                                 <div class="row">
                                     <div class="col-lg-6 mb-3 mb-lg-0">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Dasboard</div>
+                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-stack2 mr-1"></i> Dasboard</div>
                                         <a href="{{ route('dashboard') }}" class="dropdown-item rounded">Dashboard</a>
                                     </div>
                                 </div>
@@ -86,7 +80,7 @@
                             <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade" id="tab-vehicle">
                                 <div class="row">
                                     <div class="col-lg-3">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Vehicle</div>
+                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-car mr-1"></i> Vehicle</div>
                                         <a href="{{ route('vehicle') }}" class="dropdown-item rounded">List Vehicle</a>
                                         <a href="{{ route('form-vehicle') }}" class="dropdown-item rounded">Form Vehicle</a>
                                     </div>
@@ -96,7 +90,7 @@
                             <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade" id="tab-driver">
                                 <div class="row">
                                     <div class="col-lg-3">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Driver</div>
+                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-collaboration mr-1"></i> Driver</div>
                                         <a href="{{ route('driver') }}" class="dropdown-item rounded">List Driver</a>
                                         <a href="{{ route('form-driver') }}" class="dropdown-item rounded">Form Driver</a>
                                     </div>
@@ -107,14 +101,9 @@
                             <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade" id="tab-vehicle-request">
                                 <div class="row">
                                     <div class="col-lg-6 mb-3 mb-lg-0">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Request</div>
+                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-menu6 mr-1"></i>Vehicle Request</div>
                                         <a href="{{ route('vehicle-request') }}" class="dropdown-item rounded">Request all</a>
                                         <a href="{{ route('form-vehicle-request') }}" class="dropdown-item rounded">Form request</a>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Request Status</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">Pending</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Approve</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,9 +112,11 @@
                             <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade" id="tab-report">
                                 <div class="row">
                                     <div class="col-lg-6 mb-3 mb-lg-0">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Report</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">Vehicle</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Request</a>
+                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-clipboard6 mr-1"></i> Report</div>
+                                        <a href="{{ route('report-user') }}" class="dropdown-item rounded">User</a>
+                                        <a href="{{ route('report-vehicle') }}" class="dropdown-item rounded">Vehicle</a>
+                                        <a href="{{ route('report-driver') }}" class="dropdown-item rounded">Driver</a>
+                                        <a href="{{ route('report-vehicle-request') }}" class="dropdown-item rounded">Vehicle Request</a>
                                     </div>
                                 </div>
                             </div>
@@ -137,38 +128,6 @@
                                         <a href="{{ route('user') }}" class="dropdown-item rounded">Data User</a>
                                         <a href="{{ route('form-user') }}" class="dropdown-item rounded">Form User</a>
                                     </div>
-                            
-                                    <div class="col-lg-4">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2"><i class="icon-users4 mr-1"></i> Role</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">Data User Role</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Form User Role</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane dropdown-content-body dropdown-scrollable-xl fade" id="tab_menu">
-                                <div class="row">
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Sections</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">No header</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">No footer</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Fixed header</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Fixed footer</a>
-                                    </div>
-                            
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Sidebars</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">2 sidebars on 1 side</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">2 sidebars on 2 sides</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">3 sidebars</a>
-                                    </div>
-                            
-                                    <div class="col-lg-4">
-                                        <div class="font-weight-semibold border-bottom pb-2 mb-2">Layout</div>
-                                        <a href="javascript:;" class="dropdown-item rounded">Static layout</a>
-                                        <a href="javascript:;" class="dropdown-item rounded">Boxed page</a>
-                                        <a href="javascript:;" class="dropdown-item rounded active">Liquid content</a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -177,18 +136,17 @@
                 </div>
 
             </li>
+            <li class="nav-item dropdown nav-item-dropdown-xl">
+                <a href="{{ route('form-vehicle-request') }}" class="navbar-nav-link">
+                    <i class="icon-strategy mr-2"></i> <strong> New Request </strong>
+                </a>
+            </li>
 
         </ul>
     </div>
 
     <div class="d-flex flex-xl-1 justify-content-xl-end order-0 order-xl-1 pr-3">
-        <ul class="navbar-nav navbar-nav-underline flex-row">
-            <li class="nav-item">
-                <a href="#notifications" class="navbar-nav-link navbar-nav-link-toggler" data-toggle="modal">
-                    <i class="icon-bell2"></i> <span class="badge badge-mark border-pink bg-pink"></span>
-                </a>
-            </li>
-        
+        <ul class="navbar-nav navbar-nav-underline flex-row">        
             <li class="nav-item nav-item-dropdown-xl dropdown dropdown-user h-100">
                 <a href="#" class="navbar-nav-link navbar-nav-link-toggler d-flex align-items-center h-100 dropdown-toggle"
                     data-toggle="dropdown">
