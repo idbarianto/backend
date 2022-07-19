@@ -11,6 +11,9 @@ Route::group([ 'prefix' => 'vehicle-request' ], function () {
     Route::get('/form', [VehicleRequestController::class, 'form'])->name("form-vehicle-request");
     Route::post('/save', [VehicleRequestController::class, 'save'])->name("save-vehicle-request");
 
+    Route::get('/detail/{id}', [VehicleRequestController::class, 'detail'])->name("detail-vehicle-request");
+    Route::post('/detail/{id}', [VehicleRequestController::class, 'approve'])->name("approve-vehicle-request");
+    
     Route::get('/edit/{id}', [VehicleRequestController::class, 'edit'])->name("edit-vehicle-request");
     Route::post('/update/{id}', [VehicleRequestController::class, 'update'])->name("update-vehicle-request");
 

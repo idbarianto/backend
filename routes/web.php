@@ -27,23 +27,25 @@ Route::get('/', function () {
 Route::group(['prefix' => 'auth'], function () {
 
     Route::get('/sign-in', [App\Http\Controllers\AuthController::class, 'sign_in'])->name("sign-in");
+    Route::post('/sign-in', [App\Http\Controllers\AuthController::class, 'sign_in_action'])->name("sign-in-progress");
     Route::get('/sign-out', [App\Http\Controllers\AuthController::class, 'sign_out'])->name("sign-out");
 
 });
 
 
 
-require_once __DIR__ . '/web/dashboard.php';
-require_once __DIR__ . '/web/vehicle.php';
-require_once __DIR__ . '/web/vehicle-request.php';
-require_once __DIR__ . '/web/notification.php';
-require_once __DIR__ . '/web/approval.php';
-require_once __DIR__ . '/web/report.php';
-require_once __DIR__ . '/web/user.php';
-
-
 
 Route::group(['middleware' => 'auth'], function () {
+
+
+    require_once __DIR__ . '/web/dashboard.php';
+    require_once __DIR__ . '/web/driver.php';
+    require_once __DIR__ . '/web/vehicle.php';
+    require_once __DIR__ . '/web/vehicle-request.php';
+    require_once __DIR__ . '/web/notification.php';
+    require_once __DIR__ . '/web/approval.php';
+    require_once __DIR__ . '/web/report.php';
+    require_once __DIR__ . '/web/user.php';
  
 
 });
